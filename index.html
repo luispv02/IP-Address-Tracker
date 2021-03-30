@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="content-header">
+                <h1>IP Address Tracker</h1>
+                <div class="input">
+                    <input id="ip" type="text" placeholder="Search for any IP address or domain" v-model='query'>
+                    <a href="#" class="btnBuscar" ><img src="images/icon-arrow.svg" id="search_btn"></a>
+                </div>
+                <div class="info" id="info">
+                    <div class="ip tags">
+                        <p>IP Address</p>
+                        <div class="ip-info">
+                            <span class="black" id="id"></span>
+                        </div>
+                    </div>
+
+                    <div class="location tags">
+                        <p>Location</p>
+                        <div class="ip-info">
+                            <span class="black" id="town"></span>
+                        </div>
+                    </div>
+
+                    <div class="timezone tags">
+                        <p>Timezone</p>
+                        <div class="ip-info">
+                            <span class="black" id="time"></span>
+                        </div>
+                    </div>
+
+                    <div class="isp tags">
+                        <p>ISP</p>
+                        <div class="ip-info">
+                            <span class="black" id="isp"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="map" id="map"> 
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

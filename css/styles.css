@@ -1,0 +1,129 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/pattern-bg.png);
+  text-align: center;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+header .content-header {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .content-header h1 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+header .content-header .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content-header .input input {
+  width: 90%;
+  height: 45px;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+header .content-header .input img {
+  background: black;
+  padding: 16px 22px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 7px;
+}
+
+header .content-header .input img:hover {
+  background: #2b2b2b;
+  cursor: pointer;
+}
+
+header .content-header .info {
+  background: white;
+  border-radius: 14px;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+}
+
+header .content-header .info p {
+  color: #969696;
+  font-size: .7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+header .content-header .info .ip-info .black p {
+  color: black;
+  font-size: 1rem;
+  margin-top: -8px;
+}
+
+header .content-header .tags {
+  height: 70px;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  header .content-header h1 {
+    font-size: 1.6rem;
+  }
+  .content-header .input {
+    width: 60%;
+    margin: 0 auto;
+  }
+  header .content-header .input img {
+    margin-top: 6px;
+  }
+  header .content-header .info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .content-header .tags {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
